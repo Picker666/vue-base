@@ -5,6 +5,7 @@
     <CalcComputed :serialNumber="2"/>
     <StyleBind :serialNumber="3" />
     <ConditionRender :serialNumber="4" />
+    <ListRender :serialNumber="5" />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -15,6 +16,7 @@ import LifeCycle from './components/LifeCycle.vue';
 import CalcComputed from './components/CalcComputed.vue';
 import StyleBind from './components/StyleBind.vue';
 import ConditionRender from './components/ConditionRender.vue';
+import ListRender from './components/ListRender.vue';
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     LifeCycle,
     CalcComputed,
     StyleBind,
-    ConditionRender
+    ConditionRender,
+    ListRender
   }
 }
 </script>
