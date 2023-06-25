@@ -9,24 +9,26 @@
       <li v-for="(item, index) of items" :key="item.message">
           {{ index + '、' + item.message }}
       </li>
-  </ul>
-  <p><button @click="changeArr">change array</button></p>
-  <p><button @click="filter">filter array</button></p>
+    </ul>
+    <p><button @click="changeArr">change array</button></p>
+    <p><button @click="filter">filter array</button></p>
 
 
-  <ul id="v-for-object" class="demo" key="2">
-    <li v-for="(val, name, index) in object" :key="val">
-      {{ name }} : {{ val }}:{{ index }}
-    </li>
-  </ul>
+    <ul id="v-for-object" class="demo" key="2">
+      <li v-for="(val, name, index) in object" :key="val">
+        {{ name }} : {{ val }}:{{ index }}
+      </li>
+    </ul>
 
-  <ul v-for="(set, index) in sets" :key="index">
-    <li v-for="n in even(set)" :key="n">{{ n }}</li>
-  </ul>
+    <ul v-for="(set, index) in sets" :key="index">
+      <li v-for="n in even(set)" :key="n">{{ n }}</li>
+    </ul>
 
-  <div>
-    <span v-for="n in 10" :key="n">{{ n }} </span>
-  </div>
+    <div>
+      <span v-for="n in 10" :key="n">{{ n }} </span>
+    </div>
+
+    <hr>
   </div>
 </template>
 

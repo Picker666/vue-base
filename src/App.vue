@@ -6,6 +6,8 @@
     <StyleBind :serialNumber="3" />
     <ConditionRender :serialNumber="4" />
     <ListRender :serialNumber="5" />
+    <EventHandle :serialNumber="6" />
+
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -17,6 +19,7 @@ import CalcComputed from './components/CalcComputed.vue';
 import StyleBind from './components/StyleBind.vue';
 import ConditionRender from './components/ConditionRender.vue';
 import ListRender from './components/ListRender.vue';
+import EventHandle from './components/EventHandle.vue';
 
 export default {
   name: 'App',
@@ -26,7 +29,8 @@ export default {
     CalcComputed,
     StyleBind,
     ConditionRender,
-    ListRender
+    ListRender,
+    EventHandle
   }
 }
 </script>

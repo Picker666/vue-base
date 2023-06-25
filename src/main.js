@@ -8,6 +8,9 @@ Vue.config.errorHandler = function (error, vm, info) {
 Vue.config.warnHandler = function (msg, vm, trace) {
   console.log('=============msg, vm, trace: ', msg, vm, trace);
 }
+Vue.config.keyCodes = {
+  ['page-down']: 40,
+}
 
 new Vue({
   render: h => h(App),
