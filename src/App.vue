@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <LifeCycle :serialNumber=1 />
     <CalcComputed :serialNumber="2"/>
+    <StyleBind :serialNumber="3" />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -11,13 +12,15 @@
 import HelloWorld from './components/HelloWorld.vue';
 import LifeCycle from './components/LifeCycle.vue';
 import CalcComputed from './components/CalcComputed.vue';
+import StyleBind from './components/StyleBind.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     LifeCycle,
-    CalcComputed
+    CalcComputed,
+    StyleBind
   }
 }
 </script>
