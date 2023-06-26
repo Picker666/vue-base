@@ -8,7 +8,8 @@
     <ListRender :serialNumber="5" />
     <EventHandle :serialNumber="6" />
     <FormInputBind :serialNumber="7" />
-
+    <ComponentBase :serialNumber="8" />
+    
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -22,6 +23,7 @@ import ConditionRender from './components/ConditionRender.vue';
 import ListRender from './components/ListRender.vue';
 import EventHandle from './components/EventHandle.vue';
 import FormInputBind from './components/FormInputBind.vue';
+import ComponentBase from './components/ComponentBase.vue';
 
 export default {
   name: 'App',
@@ -33,7 +35,8 @@ export default {
     ConditionRender,
     ListRender,
     EventHandle,
-    FormInputBind
+    FormInputBind,
+    ComponentBase
   }
 }
 </script>
