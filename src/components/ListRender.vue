@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>{{ serialNumber + '、' + title }}</h1>
-    <ul id="example-1" key="1">
+    <ul id="example-1" key="1-1">
       <li v-for="(item, index) in items" :key="item.message">
         {{ index + '、' + item.message }}
       </li>
 
-      <li v-for="(item, index) of items" :key="item.message">
+      <li v-for="(item, index) of items" :key="item.message + '1'">
           {{ index + '、' + item.message }}
       </li>
     </ul>
@@ -14,7 +14,7 @@
     <p><button @click="filter">filter array</button></p>
 
 
-    <ul id="v-for-object" class="demo" key="2">
+    <ul id="v-for-object" class="demo" key="1-2">
       <li v-for="(val, name, index) in object" :key="val">
         {{ name }} : {{ val }}:{{ index }}
       </li>

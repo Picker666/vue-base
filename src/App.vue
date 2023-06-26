@@ -7,6 +7,7 @@
     <ConditionRender :serialNumber="4" />
     <ListRender :serialNumber="5" />
     <EventHandle :serialNumber="6" />
+    <FormInputBind :serialNumber="7" />
 
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -20,6 +21,7 @@ import StyleBind from './components/StyleBind.vue';
 import ConditionRender from './components/ConditionRender.vue';
 import ListRender from './components/ListRender.vue';
 import EventHandle from './components/EventHandle.vue';
+import FormInputBind from './components/FormInputBind.vue';
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     StyleBind,
     ConditionRender,
     ListRender,
-    EventHandle
+    EventHandle,
+    FormInputBind
   }
 }
 </script>
