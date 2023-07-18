@@ -16,7 +16,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
-import LifeCycle from './components/LifeCycle.vue';
+import LifeCycle from './components/LifeCycle/index.vue';
 import CalcComputed from './components/CalcComputed.vue';
 import StyleBind from './components/StyleBind.vue';
 import ConditionRender from './components/ConditionRender.vue';

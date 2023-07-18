@@ -9,16 +9,20 @@
       动态属性
       <button @click.stop="clickChange">改变一下</button>
     </p>
+    <Parent></Parent>
     <hr />
   </div>
 </template>
 
 <script>
-
+import Parent from './Parent';
 export default {
   name: 'LifeCycle',
   props: {
     serialNumber: Number
+  },
+  components: {
+    Parent
   },
   data: function () {
     return {
