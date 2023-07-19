@@ -1,12 +1,13 @@
 <template>
   <div>
-    this is child1 ...
+    this is child1 ...{{ count }}
   </div>
 </template>
 
 <script>
 export default {
   name: 'childComponent',
+  props: ['count'],
   beforeCreate() {
     console.log('子111：====beforeCreate');
   },

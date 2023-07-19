@@ -1,8 +1,9 @@
 <template>
   <div>
     this is parent ...
-    <Child1></Child1>
+    <Child1 :count="count"></Child1>
     <Child2></Child2>
+    <button @click="handleAdd">count: {{ count }}</button>
   </div>
 </template>
 
@@ -15,6 +16,11 @@ export default {
   components: {
     Child1,
     Child2
+  },
+  data() {
+    return {
+      count: 0
+    }
   },
   beforeCreate() {
     console.log('父：====beforeCreate');
@@ -39,6 +45,11 @@ export default {
   },
   destroyed() {
     console.log('父：====destroyed');
+  },
+  methods: {
+    handleAdd() {
+      this.count++;
+    }
   }
 }
 </script>
